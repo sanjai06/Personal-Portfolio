@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
 :root{
-    --main-color:#e38528;
+    --main-color:#e32844;
 }
 
 *{
@@ -16,7 +16,7 @@
 }
 
 html{
-    font-size: 62.5%;
+    font-size: 65%;
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
@@ -36,6 +36,7 @@ section{
     padding-bottom: 1rem;
     color:#111;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .heading span{
@@ -133,7 +134,7 @@ header .follow a:hover{
 .cursor-1.active{
     height:7rem;
     width:7rem;
-    opacity: .3;
+    opacity: .2;
 }
 
 .cursor-2{
@@ -145,7 +146,7 @@ header .follow a:hover{
     transform: translate(-50%, -50%);
     border-radius: 50%;
     z-index: 10000;
-    transition: .3s linear;
+    transition: .5s linear;
 }
 
 .cursor-2.active{
@@ -225,6 +226,10 @@ header .follow a:hover{
 
 .about .row-1 .content h3{
     color:#333;
+    font-size: 3.5rem;
+}
+.about .row-1 .content h3 span{
+    color: var(--main-color) ;
     font-size: 3.5rem;
 }
 
@@ -330,42 +335,7 @@ header .follow a:hover{
     padding-top: .5rem;
 }
 
-.service .box-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap:1.5rem;
-}
 
-.service .box-container .box{
-    flex:1 1 30rem;
-    text-align: center;
-    padding:2rem;
-    background:#fff;
-    border-radius: .5rem;
-    box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
-}
-
-.service .box-container .box i{
-    height:6rem;
-    width:6rem;
-    line-height: 6rem;
-    font-size: 2.5rem;
-    color:#fff;
-    background:var(--main-color);
-    border-radius: 50%;
-}
-
-.service .box-container .box h3{
-    color:#444;
-    font-size: 2.2rem;
-    padding-top: 1rem;
-}
-
-.service .box-container .box p{
-    color:#666;
-    font-size: 1.7rem;
-    padding-top: .5rem;
-}
 
 .experience .box-container{
     display: flex;
